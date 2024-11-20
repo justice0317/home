@@ -1,0 +1,73 @@
+/* 字體設定 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* 標題設定 */
+.main-title {
+    font-size: 85px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 700; /* 粗體 */
+}
+
+.subtitle {
+    font-size: 25px;
+    margin: 10px 0 30px;
+    color: #ffffff;
+    font-weight: 400; /* 正常字體 */
+}
+
+/* 圖片框設定 */
+.image-box {
+    width: 340px;
+    height: 218px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    background-color: #92ABBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 按鈕樣式 */
+.btn {
+    width: 340px; /* 更扁一點 */
+    height: 70px; /* 更低一點 */
+    font-size: 35px;
+    font-weight: 700; /* 粗體 */
+    color: #455264;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px; /* 更圓的自然邊角 */
+    cursor: pointer;
+    margin-bottom: 30px; /* 增大按鈕之間的間距 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* 確保按鈕水平居中 */
+}
+
+/* 最後一個按鈕特例：底部無間距 */
+.btn:last-child {
+    margin-bottom: 0;
+}
+
+/* 按鈕懸停效果 */
+.btn:hover {
+    background-color: #C8C8C8;
+}
