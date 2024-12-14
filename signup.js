@@ -19,7 +19,7 @@ async function registerSuccess() {
 
     try {
         // 使用 fetch 發送 POST 請求
-        const response = await fetch('http://54.150.30.200:5000/register', {
+        const response = await fetch('https://54.150.30.200:5000/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json' // 指定傳遞 JSON
