@@ -15,7 +15,7 @@ async function login() {
 
     try {
         // 發送 POST 請求到後端
-        const response = await fetch('https://54.150.30.200:5000/login', { // 替換成你的後端 API 地址
+        const response = await fetch('http://54.150.30.200:5000/login', { // 替換成你的後端 API 地址
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
