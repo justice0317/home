@@ -1,0 +1,94 @@
+/* 字體設定 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    color: #455264;
+}
+
+/* 內容區域 */
+.container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%; /* 保證框框與螢幕頂部有距離 */
+}
+
+/* 大標題 */
+.main-title {
+    font-size: 75px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px; /* 與框框保持適當距離 */
+}
+
+/* 內容框 */
+.content-box {
+    width: 500px;  /* 框框寬度 */
+    height: 500px; /* 框框高度 */
+    height: auto; /* 自動調整高度 */
+    max-height: 80vh; /* 最大高度為螢幕高度的 80% */
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 20px auto; /* 居中並與大標題有間距 */
+    box-sizing: border-box;
+}
+
+/* 註冊標題 */
+.login-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #455264;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 輸入欄樣式 */
+.input-group {
+    margin-bottom: 30px;  /* 增加輸入欄之間的間距 */
+    text-align: left;
+    width: 80%;  /* 使輸入欄和標題對齊 */
+    margin-left: auto;
+    margin-right: auto; /* 使輸入欄與標題居中 */
+}
+
+.input-label {
+    font-size: 25px;
+    font-weight: 700;
+    color: #455264;
+    margin-bottom: 50px;
+}
+
+.input-field {
+     width: 100%; /* 輸入欄寬度為父容器的 100% */
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #455264;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block; /* 讓輸入欄置中 */
+}
+
+/* 確認按鈕樣式 */
+.btn-confirm {
+    width: 252px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #455264;
+    background-color: #B2C4DC;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px auto 0 auto; /* 按鈕置中並與其他內容保持距離 */
+}
+
+.btn-confirm:hover {
+    background-color: #a1b3c4;
+}
