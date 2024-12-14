@@ -56,7 +56,7 @@ async function submitCode() {
     }
 
     try {
-        const response = await fetch('http://localhost:5000/verify', {
+        const response = await fetch('https://54.150.30.200:5000/verify', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ async function retryCode() {
     }
 
     try {
-        const response = await fetch('http://localhost:5000/resend_verification_request', {
+        const response = await fetch('https://54.150.30.200:5000/resend_verification_request', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ async function retryCode() {
 // 成功驗證後跳轉（可根據實際需求修改此方法）
 function verifySuccess() {
     alert('驗證成功！即將跳轉...');
-    window.location.href = 'https://signupsuccess.vercel.app'; // 跳轉至成功頁面
+    //window.location.href = 'https://signupsuccess.vercel.app'; // 跳轉至成功頁面
 }
 
 // 獲取驗證碼輸入值
