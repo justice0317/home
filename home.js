@@ -93,5 +93,5 @@ function logout() {
     sessionStorage.removeItem('email');
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('user_id');
-    window.location.href = 'index.html'; // 跳轉回登錄頁面
+    window.location.href = 'logout.html'; // 跳轉回登錄頁面
 }
