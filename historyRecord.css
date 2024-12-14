@@ -1,0 +1,287 @@
+/* 基本樣式 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 頂部標題 */
+.top-banner {
+    width: 100%;
+    height: 160px;
+    background-color: #455264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.menu-btn {
+    position: absolute;
+    left: -20px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-title {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.userInf{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #455264;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    color: #b0b0b0;
+    background-color: #F0F4F7;
+}
+
+.userIcon{
+    width: 150%;
+    height: 150%;
+}
+
+.userName{
+    font-size: 18px;
+}
+
+/* 彈跳視窗 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* 預設完全收合 */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2; /* 彈跳視窗在最上層 */
+}
+
+/* 彈跳視窗的文字按鈕 */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;  /* 按鈕垂直排列 */
+    gap: 20px; /* 按鈕之間的間距 */
+    flex-grow: 1;
+    justify-content: flex-start; /* 從上方開始排列 */
+    margin-top: 20px; /* 與上方有些間距 */
+}
+
+.sidebar-menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 按鈕居中 */
+    align-items: center;
+    position: relative;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #455264;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center; /* 讓文字按鈕居中 */
+}
+
+/* 橫線 */
+.sidebar-menu hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 70%;
+    margin-top: 10px; /* 橫線和按鈕之間有些距離 */
+}
+
+/* 調整收回按鈕位置 */
+.close-btn {
+    align-self: flex-start;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #455264;
+    cursor: pointer;
+    left: -20px; /* 靠左對齊 */
+    margin-bottom: 20px; /* 與下方按鈕保持間距 */
+}
+
+/* 表格 */
+.record-table {
+    margin: 40px auto; /* 增加與標題的距離 */
+    border-collapse: collapse;
+    width: 80%; /* 減小表格寬度 */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.record-table th {
+    background-color: #678192;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #678192; /* 頂部的分隔線 */
+    font-size: 20px;
+}
+
+.record-table td {
+    padding: 10px;
+    text-align: center;
+    color: #678192;
+    border-top: 1px solid #678192; /* 表格內容的分隔線 */
+    border-bottom: 1px solid #678192; /* 表格內容的分隔線 */
+    font-size: 20px;
+}
+
+.record-table tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* 回饋框 */
+.feedback-box {
+    display: none;
+    margin: 40px auto; /* 增加與標題的距離 */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-content {
+    display: flex;
+    gap: 20px; /* 增加左右分區間距 */
+}
+.date {
+    flex: 1;
+    padding: 10px;
+    font-size: 25px;
+    color: #678192;
+}
+
+.item {
+    flex: 1;
+    padding: 10px;
+    font-size: 25px;
+    color: #678192;
+}
+.score {
+    flex: 1;
+    padding: 10px;
+    font-size: 25px;
+    color: #678192;
+}
+
+.comment {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    color: #678192;
+}
+
+.feedback-left {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    color: #678192;
+}
+
+.feedback-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.video-container video {
+    width: 100%; /* 設置為右側區域的寬度 */
+    height: 300px; /* 增大影片高度 */
+    border-radius: 10px;
+}
+
+.api-image img {
+    width: 300px; /* 與影片同寬 */
+    height: 100%; /* 使圖片填滿正方形 */
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1; /* 正方形圖片 */
+}
+
+/* 按鈕 */
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #678192;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #54657a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* 滑過按鈕時更強烈的陰影 */
+}
+
+/* 遮罩效果 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+    z-index: 1; /* 遮罩在彈跳視窗下面 */
+    display: none; /* 預設不顯示 */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+    display: block; /* 彈跳視窗打開時啟用 */
+}
+
+/* 彈跳視窗內容不透明 */
+.sidebar {
+    background-color: white; /* 彈跳視窗不變透明 */
+}

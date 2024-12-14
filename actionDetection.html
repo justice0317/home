@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽球動作偵測</title>
+    <link rel="stylesheet" href="actionDetection.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn">≡</button>
+        <h1 class="main-title">羽球動作偵測</h1>
+        <div class="userInf">
+            <div class="circle">
+                <img class="userIcon" src="default_icon.png" />
+            </div>
+            <div class="userName">username</div>
+        </div>
+    </div>
+
+    <!-- 彈跳視窗 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="https://homepage-flax-nu.vercel.app">主頁</a></li>
+            <hr>
+            <li><a href="https://member-zeta.vercel.app">會員</a></li>
+            <hr>
+            <li><a href="about.html">介紹</a></li>
+            <hr>
+            <li><a href="logout.html">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <div class="description">
+            <p class="instruction-text">   您可以於下方選擇想偵測的動作，</p>
+            <p class="instruction-text">請準備好您的影片或於之後的上傳網站進行拍攝後上傳。</p>
+        </div>
+
+        <div class="button-grid">
+            <button class="action-btn" onclick="window.location.href = 'forehandServeGuide.html'">正手發球</button>
+            <button class="action-btn" onclick="window.location.href='backhandServeGuide.html'">反手發球</button>
+            <button class="action-btn" onclick="window.location.href='forehandClearGuide.html'">正手高遠球</button>
+            <button class="action-btn" onclick="window.location.href='backhandClearGuide.html'">反手高遠球</button>
+            <button class="action-btn" onclick="window.location.href='forehandSmashGuide.html'">正手殺球</button>
+            <button class="action-btn" onclick="window.location.href='backhandSmashGuide.html'">反手殺球</button>
+        </div>
+    </div>
+
+    <script src="actionDetection.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽球正手高遠球動作偵測</title>
+    <link rel="stylesheet" href="forehandClearGuide.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn">≡</button>
+        <h1 class="main-title">正手高遠球動作偵測</h1>
+        <div class="userInf">
+            <div class="circle">
+                <img class="userIcon" src="default_icon.png" />
+            </div>
+            <div class="userName">username</div>
+        </div>
+    </div>
+
+    <!-- 彈跳視窗 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="https://homepage-flax-nu.vercel.app">主頁</a></li>
+            <hr>
+            <li><a href="https://member-zeta.vercel.app">會員</a></li>
+            <hr>
+            <li><a href="https://about-livid.vercel.app">介紹</a></li>
+            <hr>
+            <li><a href="https://logout-smoky.vercel.app">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <!-- 合併提示框與圖片框 -->
+        <div class="combined-box">
+            <p class="instruction-text">
+                因正手動作身體會轉向右側，<br>
+                故拍攝正手動作時鏡頭需從右邊朝向左邊進行拍攝，<br>
+                角度錯誤可能會對偵測結果造成影響。
+            </p>
+            <div class="image-box">
+                <img id="upload-preview" src="https://i.imgur.com/3YBgbU4.png" alt="請上傳圖片" />
+            </div>
+            <p class="instruction-text">
+                影片請以上圖角度拍攝，確認以上訊息後請按下一步進行上傳。
+            </p>
+            <button class="next-btn">下一步</button>
+        </div>
+    </div>
+
+    <script src="forehandClearGuide.js"></script>
+</body>
+</html>

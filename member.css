@@ -1,0 +1,136 @@
+/* 基本樣式 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.main-title {
+    font-size: 60px;
+    color: #366083;
+    margin: 70px 0 30px; /* 確保標題下方有適當空間 */
+}
+
+/* 大框框 */
+.content-box {
+    width: 80%;
+    max-width: 900px;
+    background-color: #B2C4DC;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 小框框間距 */
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; /* 與其他內容保持適當間距 */
+}
+
+/* 小框框通用樣式 */
+.small-box {
+    background-color: #C7DEE8;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* 自適應大框寬度 */
+    text-align: left;
+    position: relative; /* 為了定位按鈕 */
+}
+
+/* 第一框框 */
+.large-box {
+    background-color: #C7DEE8;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* 自適應大框寬度 */
+    text-align: left;
+    min-height: 320px; /* 確保按鈕與內容不重疊 */
+    position: relative;
+}
+
+/* 圓形區域 */
+.circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #455264;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    color: #b0b0b0;
+    background-color: #F0F4F7;
+}
+
+.userIcon{
+    width: 150%;
+    height: 150%;
+}
+
+#profile-picture {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* 標籤和輸入框 */
+.input-label {
+    font-size: 18px;
+    color: #455264;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-field {
+    width: calc(100% - 30px); /* 輸入框長度與小框框內部一致 */
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #455264;
+}
+
+/* 確認按鈕 */
+.btn-confirm {
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #455264;
+    background-color: #B2C4DC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* 靠框框底部 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%);
+}
+
+.btn-confirm:hover {
+    background-color: #A3B9CF;
+}
+
+/* 第二、第三小框框 */
+.small-box:not(.large-box) {
+    min-height: 150px; /* 根據內容縮小框框 */
+}

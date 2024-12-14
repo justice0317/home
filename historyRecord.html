@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動作偵測紀錄</title>
+    <link rel="stylesheet" href="historyRecord.css">
+</head>
+<body>
+    <!-- 頂部標題 -->
+    <div class="top-banner">
+        <button class="menu-btn">☰</button>
+        <h1 class="main-title">動作偵測紀錄</h1>
+        <div class="userInf">
+            <div class="circle">
+                <img class="userIcon" src="default_icon.png" />
+            </div>
+            <div class="userName">username</div>
+        </div>
+    </div>
+
+    <!-- 彈跳視窗 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="https://homepage-flax-nu.vercel.app">主頁</a></li>
+            <hr>
+            <li><a href="https://member-zeta.vercel.app">會員</a></li>
+            <hr>
+            <li><a href="https://about-livid.vercel.app">介紹</a></li>
+            <hr>
+            <li><a href="https://logout-smoky.vercel.app">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 表格區 -->
+    <div class="content">
+        <table class="record-table">
+            <thead>
+                <tr>
+                    <th>偵測日期</th>
+                    <th>偵測項目</th>
+                    <th>分數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="showFeedback()">
+                    <td>2024/11/28</td>
+                    <td>反手發球</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 回饋框 -->
+    <div class="feedback-box hidden">
+        <div class="feedback-content">
+            <!-- 左半部 -->
+            <div class="feedback-left">
+              <div class="date">偵測日期：2024/11/28</div>
+              <div class="item">偵測項目：<br>反手發球</div>
+              <div class="score">分數：80</div>
+              <br></br>
+                <div class="comment">
+                    你的反手高遠球姿勢非常接近我們的標準影片！顯示了你已經有了水準之上的反手高遠球的動作技巧，也能正確的判斷來球方向和擊球時機，保持這樣的表現，繼續努力保持正確的擊球姿勢和判斷，這將有助於提升你在球場的穩定表現。
+                </div>
+            </div>
+            <!-- 右半部 -->
+            <div class="feedback-right">
+                <div class="video-container">
+                    <video controls>
+                        <source src="sample.mp4" type="video/mp4">
+                        您的瀏覽器不支援影片播放。
+                    </video>
+                </div>
+                <div class="api-image">
+                    <img src="sample-image.jpg" alt="API 圖片">
+                </div>
+            </div>
+        </div>
+        <button class="btn back-btn" onclick="showTable()">返回</button>
+    </div>
+    <script src="historyRecord.js"></script>
+</body>
+</html>

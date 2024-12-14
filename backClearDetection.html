@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反手高遠球影片上傳</title>
+    <link rel="stylesheet" href="backClearDetection.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h1 class="main-title">反手高遠球影片上傳</h1>
+        <div class="userInf">
+            <div class="circle">
+                <img class="userIcon" src="default_icon.png" />
+            </div>
+            <div class="userName">username</div>
+        </div>
+    </div>
+
+    <!-- 彈跳視窗 -->
+     <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="https://homepage-flax-nu.vercel.app">主頁</a></li>
+            <hr>
+            <li><a href="https://member-zeta.vercel.app">會員</a></li>
+            <hr>
+            <li><a href="https://about-livid.vercel.app">介紹</a></li>
+            <hr>
+            <li><a href="https://logout-smoky.vercel.app">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 內容區 -->
+    <div class="content">
+        <div class="upload-box" onclick="triggerUpload()">
+            <input type="file" id="videoUpload" accept="video/*" class="upload-input" onchange="previewVideo()" style="display: none;">
+            <video id="previewVideo" controls style="display: none; width: 100%; max-height: 300px; border-radius: 10px; margin: 10px;"></video>
+            <p class="upload-text" id="uploadText">請點此上傳影片</p>
+        </div>
+
+        <div class="upload-buttons" id="uploadButtons">
+            
+            <button class="btn" onclick="resetUpload()">重選</button>
+          <button class="btn" id="uploadButton" onclick="uploadVideo()">上傳</button>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">請稍候<span id="dots"></span></div>
+
+        <div class="result-box" id="resultBox" style="display: none;">
+            <div class="result-left">
+                <div class="score">
+                    <strong>分數：</strong><span id="score"></span>
+                </div>
+                <div class="comment" id="comment"></div>
+            </div>
+            <div class="result-right">
+                <img id="resultImage" alt="結果圖片" style="max-width: 100%; height: auto; border-radius: 10px;">
+            </div>
+            <div class="result-buttons">
+                <button class="btn" onclick="resetUpload()">重新上傳</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="backClearDetection.js"></script>
+</body>
+</html>
