@@ -1,0 +1,117 @@
+/* 字體設定 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #455264;
+}
+
+/* 內容區域 */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* 大標題 */
+.main-title {
+    font-size: 75px;
+    font-weight: 700; /* 粗體 */
+    color: white; /* 大標顏色設為白色 */
+    margin: 0;
+    position: absolute;
+    top: 10%;  /* 大標位置在畫面中上方 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 內容框 */
+.content-box {
+    width: 500px;  /* 框框寬度 */
+    height: 500px; /* 框框高度 */
+    background-color: white;
+    border-radius: 15px; /* 自然圓角 */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 23%;  /* 框框往下移，距離標題更多 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 登入標題 */
+.login-title {
+    font-size: 38px;
+    font-weight: 700; /* 粗體 */
+    color: #455264;
+    text-align: center;
+    margin-bottom: 30px; /* 增加與下方內容的間距 */
+}
+
+/* 輸入欄樣式 */
+.input-group {
+    margin-bottom: 30px;  /* 增加輸入欄之間的間距 */
+    text-align: left;
+    width: 80%;  /* 使輸入欄和標題對齊 */
+    margin-left: auto;
+    margin-right: auto; /* 使輸入欄與標題居中 */
+}
+
+.input-label {
+    font-size: 25px;
+    font-weight: 700;
+    color: #455264;
+    margin-bottom: 50px;
+}
+
+.input-field {
+    width: 100%; /* 輸入欄寬度為父容器的 100% */
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #455264;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block; /* 讓輸入欄置中 */
+}
+
+/* 按鈕樣式 */
+.btn-confirm {
+    width: 252px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700; /* 粗體 */
+    color: #455264;
+    background-color: #B2C4DC;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px auto;  /* 調整按鈕與上下內容的間距 */
+}
+
+.btn-confirm:hover {
+    background-color: #a1b3c4;
+}
+
+/* 忘記密碼文字 */
+.forgot-password {
+    font-size: 20px;
+    font-weight: 700;
+    color: #455264;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
