@@ -56,7 +56,7 @@ async function submitCode() {
     }
 
     try {
-        const response = await fetch('https://54.150.30.200:5000/verify', {
+        const response = await fetch('http://54.150.30.200:5000/verify', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ async function retryCode() {
     }
 
     try {
-        const response = await fetch('https://54.150.30.200:5000/resend_verification_request', {
+        const response = await fetch('http://54.150.30.200:5000/resend_verification_request', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
