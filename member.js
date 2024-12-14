@@ -38,7 +38,7 @@ profileInput.addEventListener('change', async (event) => {
         formData.append('user_id', user_id);
 
         try {
-            const response = await fetch('http://localhost:5000/update_user_icon', {
+            const response = await fetch('http://54.150.30.200:5000/update_user_icon', {
                 method: 'POST',
                 body: formData,
             });
@@ -68,11 +68,11 @@ document.querySelectorAll('.btn-confirm').forEach((button, index) => {
 
         if (index === 0) {
             inputField = document.getElementById('username').value;
-            endpoint = 'http://localhost:5000/update_user_name';
+            endpoint = 'http://54.150.30.200:5000/update_user_name';
             bodyData.name = inputField;
         } else if (index === 1) {
             inputField = document.getElementById('email').value;
-            endpoint = 'http://localhost:5000/update_user_email';
+            endpoint = 'http://54.150.30.200:5000/update_user_email';
             bodyData.email = inputField;
         } else if (index === 2) {
             alert('密碼更新功能尚未實作！');
