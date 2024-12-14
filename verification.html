@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驗證碼畫面</title>
+    <link rel="stylesheet" href="verification.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 大標題 -->
+        <h1 class="main-title">AI 羽球教練</h1>
+
+        <!-- 主內容框 -->
+        <div class="content-box">
+            <h2 class="login-title">輸入驗證碼 Verification Code</h2>
+
+            <!-- 提示文字 -->
+            <p class="verification-tip">
+                已傳送驗證碼至您的 email<br>
+                請於 <span id="countdown">180</span> 秒內回到此畫面輸入驗證！
+            </p>
+
+            <!-- 驗證碼輸入框 -->
+            <div class="code-input-group">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+                <input type="text" class="code-input" maxlength="1">
+            </div>
+
+            <!-- 按鈕組 -->
+            <div class="button-group">
+                <button class="btn-retry" onclick="retryCode()">重傳驗證碼</button>
+                <button class="btn-confirm" onclick="submitCode()">確定送出</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="verification.js"></script>
+</body>
+</html>

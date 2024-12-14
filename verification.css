@@ -1,0 +1,107 @@
+/* 基本樣式 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    color: #455264;
+}
+
+/* 容器設置 */
+.container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%; /* 調整內容上移 */
+}
+
+/* 大標題 */
+.main-title {
+    font-size: 75px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px; /* 減少與內容框的間距 */
+}
+
+/* 內容框 */
+.content-box {
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: -20px; /* 讓內容框上移 */
+}
+
+/* 標題 */
+.login-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #455264;
+    margin-bottom: 20px;
+}
+
+/* 提示文字 */
+.verification-tip {
+    font-size: 18px;
+    color: #455264;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* 驗證碼輸入框 */
+.code-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.code-input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #455264;
+}
+
+/* 按鈕容器 */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 按鈕之間的間距 */
+    margin-top: 30px; /* 與輸入框分開 */
+}
+
+/* 按鈕樣式 */
+.btn-retry, .btn-confirm {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-retry {
+    background-color: #D9D9D9;
+    color: #455264;
+}
+
+.btn-confirm {
+    background-color: #B2C4DC;
+    color: #455264;
+}
+
+.btn-retry:hover {
+    background-color: #c8c8c8;
+}
+
+.btn-confirm:hover {
+    background-color: #a1b3c4;
+}
