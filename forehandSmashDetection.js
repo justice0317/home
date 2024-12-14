@@ -105,7 +105,7 @@ function uploadVideo() {
     formData.append('video', videoFile);
 
     // 使用 Fetch API 將影片上傳到 Flask API
-    fetch('https://1d2b-2001-b400-e78c-5f54-5415-5fa2-37af-90b1.ngrok-free.app/upload', {
+    fetch(`http://localhost:5000/upload_video_forehand_smash?user_id=${user_id}`, {
         method: 'POST',
         body: formData
     })
@@ -118,8 +118,8 @@ function uploadVideo() {
 
         // 顯示分數、評論與圖片
         document.getElementById('score').textContent = data.score;
-        document.getElementById('comment').textContent = data.comment;
-        document.getElementById('resultImage').src = data.chart; // 圖表顯示
+        document.getElementById('comment').innerHTML = data.comment.replace(/\n/g, '<br>');
+        document.getElementById('resultImage').src = data.img_url;
     })
     .catch(error => {
         console.error('Error:', error);
