@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主畫面</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn">≡</button>
+        <h1 class="main-title">AI羽球教練</h1>
+        <div class="userInf">
+            <div class="circle">
+                <img class="userIcon" src="default_icon.png" />
+            </div>
+            <div class="userName">username</div>
+        </div>
+    </div>
+
+    <!-- 彈跳視窗 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">主頁</a></li>
+            <hr>
+            <li><a href="member.html">會員</a></li>
+            <hr>
+            <li><a href="about.html">介紹</a></li>
+            <hr>
+            <li><a href="#" onclick="logout()">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要內容 -->
+    <div class="content">
+        <div class="image-box">
+            <img src="https://st2.depositphotos.com/4112313/9124/v/600/depositphotos_91244172-stock-illustration-polygonal-professional-badminton-player-on.jpg" alt="羽球相關圖片">
+        </div>
+        <button class="content-btn" onclick="window.location.href='https://teachingcatalog.vercel.app'">羽球擊球動作教學</button>
+        <button class="content-btn" onclick="redirectToActionDetection()">羽球動作偵測</button>
+        <button class="content-btn" onclick="historyRecord()">動作偵測紀錄</button>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
