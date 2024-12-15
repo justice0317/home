@@ -88,10 +88,3 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active'); // 隱藏遮罩
     document.body.classList.remove('dimmed'); // 恢復正常透明度
 });
-
-function logout() {
-    sessionStorage.removeItem('email');
-    sessionStorage.removeItem('username');
-    sessionStorage.removeItem('user_id');
-    window.location.href = 'logout.html'; // 跳轉回登錄頁面
-}
