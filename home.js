@@ -38,7 +38,7 @@ function redirectToActionDetection() {
 
 async function historyRecord() {
     try {
-        const response = await fetch('http://localhost:5000//query_history_request', {
+        const response = await fetch('http://54.150.30.200:5000//query_history_request', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
