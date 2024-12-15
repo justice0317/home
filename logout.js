@@ -14,6 +14,10 @@ closeBtn.addEventListener('click', () => {
 // 確認按鈕功能
 const confirmBtn = document.querySelector('.confirm-btn');
 confirmBtn.addEventListener('click', () => {
+    sessionStorage.removeItem('email');
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('user_id');
+    window.location.href = 'logout.html'; // 跳轉回登錄頁面
     // 跳轉到登出後的頁面
     window.location.href = '/logout-success.html';
 });
