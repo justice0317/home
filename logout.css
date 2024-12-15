@@ -1,0 +1,170 @@
+/* 基本樣式 */
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #92ABBA;
+    font-weight: bold; /* 全文字粗體 */
+    display: flex;
+    flex-direction: column; /* 垂直排列元素 */
+    justify-content: flex-start; /* 讓元素往上對齊 */
+    align-items: center;
+    height: 100vh; /* 讓畫面高度充滿視窗 */
+}
+
+/* 頂部標題區 */
+.top-banner {
+    width: 100%;
+    height: 160px;
+    background-color: #455264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.menu-btn {
+    position: absolute;
+    left: -20px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-title {
+    font-size: 75px;
+    margin: 0;
+}
+
+/* 側邊欄 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* 預設完全收合 */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 2; /* 彈跳視窗在最上層 */
+}
+
+/* 彈跳視窗的文字按鈕 */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;  /* 按鈕垂直排列 */
+    gap: 20px; /* 按鈕之間的間距 */
+    flex-grow: 1;
+    justify-content: flex-start; /* 從上方開始排列 */
+    margin-top: 20px; /* 與上方有些間距 */
+}
+
+.sidebar-menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 按鈕居中 */
+    align-items: center;
+    position: relative;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #455264;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center; /* 讓文字按鈕居中 */
+}
+
+/* 橫線 */
+.sidebar-menu hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 70%;
+    margin-top: 10px; /* 橫線和按鈕之間有些距離 */
+}
+
+/* 調整收回按鈕位置 */
+.close-btn {
+    align-self: flex-start;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #455264;
+    cursor: pointer;
+    left: -20px; /* 靠左對齊 */
+    margin-bottom: 20px; /* 與下方按鈕保持間距 */
+}
+
+/* 登出框樣式 */
+.logout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* 讓按鈕往下排 */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 自訂寬度和高度 */
+    width: 100%; /* 根據內容自適應寬度 */
+    max-width: 700px; /* 最大寬度，這個可以根據需要修改 */
+    height: 230px; /* 讓高度根據內容自適應 */
+    position: absolute; /* 使其定位於頁面上 */
+    top: 250px; /* 根據大標題區的高度，讓文字框出現在正下方 */
+}
+
+/* 文字 */
+.logout-content p {
+    font-size: 40px; /* 文字大小 */
+    margin-bottom: 40px; /* 增加文字與按鈕的間距 */
+    color: #455264; /* 文字顏色 */
+    font-weight: bold; /* 全粗體 */
+    width: fit-content; /* 根據文字自適應寬度 */
+    margin: 0 auto; /* 讓文字居中 */
+}
+
+/* 按鈕 */
+.logout-buttons {
+    display: flex;
+    flex-direction: row; /* 水平排列按鈕 */
+    gap: 20px; /* 增加按鈕間的間距 */
+}
+
+.cancel-btn, .confirm-btn {
+    background-color: #678192;
+    color: white; /* 按鈕文字顏色 */
+    border: none;
+    padding: 15px 30px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* 按鈕文字粗體 */
+    transition: background-color 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #54657a;
+}
+
+.confirm-btn {
+    background-color: #FF6347;
+}
+
+.confirm-btn:hover {
+    background-color: #e5573f;
+}
