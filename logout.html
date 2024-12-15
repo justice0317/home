@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登出</title>
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    <!-- 頂部標題區 -->
+    <div class="top-banner">
+        <button class="menu-btn">≡</button>
+        <h1 class="main-title">AI羽球教練</h1>
+    </div>
+
+    <!-- 側邊欄 -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn">❬</button>
+        <ul class="sidebar-menu">
+            <li><a href="https://homepage-flax-nu.vercel.app">主頁</a></li>
+            <hr>
+            <li><a href="https://member-zeta.vercel.app">會員</a></li>
+            <hr>
+            <li><a href="https://about-livid.vercel.app">介紹</a></li>
+            <hr>
+            <li><a href="https://logout-smoky.vercel.app">登出</a></li>
+        </ul>
+    </div>
+
+    <!-- 登出確認內容 -->
+    <div class="logout-content">
+        <p>是否確認登出？<br>確認後若要繼續使用需要重新登錄！<br><br></p>
+        <div class="logout-buttons">
+            <button class="cancel-btn" onclick="window.location.href='https://homepage-flax-nu.vercel.app'">取消</button>
+            <button class="confirm-btn">確認</button>
+        </div>
+    </div>
+
+    <script src="logout.js"></script>
+</body>
+</html>
