@@ -11,6 +11,21 @@ sessionStorage.setItem('username', username);
 sessionStorage.setItem('user_id', user_id);
 sessionStorage.setItem('icon_url', icon_url);
 
+if (user_id) {
+    // 顯示用戶名
+    const userNameElement = document.querySelector('.userName');
+    userNameElement.textContent = username;
+} else {
+    // 如果沒有用戶信息，跳轉到登錄頁
+    alert('未登入或會話已過期');
+    window.location.href = 'index.html';
+}
+
+if(icon_url!="default"){
+    const userIcon = document.querySelector('.userIcon');
+    userIcon.src = icon_url;
+}
+
 menuBtn.addEventListener('click', () => {
     sidebar.style.left = '0'; // 展開側邊欄
 });
