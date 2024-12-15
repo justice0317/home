@@ -106,7 +106,7 @@ function uploadVideo() {
     formData.append('video', videoFile);
 
     // 使用 Fetch API 將影片上傳到 Flask API
-    fetch(`http://localhost:5000/upload_video_backhand_serve?user_id=${user_id}`, {
+    fetch(`http://54.150.30.200:5000/upload_video_backhand_serve?user_id=${user_id}`, {
         method: 'POST',
         body: formData
     })
