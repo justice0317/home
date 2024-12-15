@@ -2,6 +2,14 @@
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close-btn');
 const sidebar = document.getElementById('sidebar');
+const email = sessionStorage.getItem('email');
+const username = sessionStorage.getItem('username');
+const user_id = sessionStorage.getItem('user_id');
+const icon_url = sessionStorage.getItem('icon_url');
+sessionStorage.setItem('email', email);
+sessionStorage.setItem('username', username);
+sessionStorage.setItem('user_id', user_id);
+sessionStorage.setItem('icon_url', icon_url);
 
 menuBtn.addEventListener('click', () => {
     sidebar.style.left = '0'; // 展開側邊欄
@@ -17,6 +25,7 @@ confirmBtn.addEventListener('click', () => {
     sessionStorage.removeItem('email');
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('user_id');
+    sessionStorage.removeItem('icon_url');
     window.location.href = 'logout.html'; // 跳轉回登錄頁面
     // 跳轉到登出後的頁面
     window.location.href = '/logout-success.html';
